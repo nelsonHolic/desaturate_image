@@ -27,6 +27,11 @@ void desaturateImage(Image *image) {
     image->syncPixels();
 }
 
+void desaturateImageConvolve(Image *image) {
+    double kernel[9] = { 0, -1, 0, -1, 5, -1, 0, -1, 0};
+    image->convolve(9, kernel);
+}
+
 
 int main(int argc,char **argv)
 {
