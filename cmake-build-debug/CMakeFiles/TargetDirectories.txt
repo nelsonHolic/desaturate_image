@@ -1,0 +1,3 @@
+/home/nelson.escobar/CLionProjects/jpeg_processing/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/nelson.escobar/CLionProjects/jpeg_processing/cmake-build-debug/CMakeFiles/image_processing.dir
+/home/nelson.escobar/CLionProjects/jpeg_processing/cmake-build-debug/CMakeFiles/edit_cache.dir

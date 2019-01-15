@@ -1,0 +1,1 @@
+/usr/bin/c++  -g   CMakeFiles/image_processing.dir/main.cpp.o  -o image_processing /usr/lib/x86_64-linux-gnu/libMagick++-6.Q16.so 
