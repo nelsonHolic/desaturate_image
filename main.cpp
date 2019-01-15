@@ -9,7 +9,6 @@ int main(int argc,char **argv)
     InitializeMagick(*argv); // Create base image
 
     Image image;
-    Image image2;
 
     if( argc < 2) {
         cerr << "there are not enough params, you need to set at least the file name" << endl;
