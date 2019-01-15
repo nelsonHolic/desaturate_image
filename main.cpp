@@ -14,13 +14,15 @@ void desaturateImage(Image *image) {
     // now you can access single pixels like a vector
     int row = 0;
     int column = 0;
-    int desaturateColor = 0;
+    int desaturatedColor = 0;
+    PixelPacket currentPixel;
 
 
     for (row = 0; row < h; row++) {
         for (column = 0; column < w; column++) {
-            desaturateColor = (pixels[w * row + column].red + pixels[w * row + column].green  + pixels[w * row + column].blue) / 3;
-            pixels[w * row + column] = Magick::Color(desaturateColor, desaturateColor, desaturateColor);
+            currentPixel = pixels[w * row + column];
+            desaturatedColor = (currentPixel.red + currentPixel.green  + currentPixel.blue) / 3;
+            pixels[w * row + column] = Color(desaturatedColor, desaturatedColor, desaturatedColor);
         }
     }
 
